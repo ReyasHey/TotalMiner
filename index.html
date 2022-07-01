@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Total Miner Community</title>
+        <meta name="description" content="Total Miner Community">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="./imgs/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./imgs/favicon//apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./imgs/favicon//apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./imgs/favicon//apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./imgs/favicon//apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./imgs/favicon//apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./imgs/favicon//apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./imgs/favicon//apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./imgs/favicon//apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="./imgs/favicon//android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./imgs/favicon//favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./imgs/favicon//favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./imgs/favicon//favicon-16x16.png">
+        <link rel="manifest" href="./imgs/favicon//manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./stylesheet.css">
+        <script src="./carousels.js"></script>
+        <script>
+            function toggleHamburger () {
+                var nav = document.getElementById("hero-nav");
+
+                var slice1 = document.getElementById("hamburger-slice-1");
+                var slice2 = document.getElementById("hamburger-slice-2");
+                var slice3 = document.getElementById("hamburger-slice-3");
+
+                nav.classList.toggle("active");
+
+                slice1.classList.toggle("active");
+                slice2.classList.toggle("active");
+                slice3.classList.toggle("active");
+            }
+        </script>
+    </head>
+    <body onload="drawRandomChar(), drawRandomBanner()">
+        <header class="hero-header">
+            <nav style="width: 36%; height: 100%;">
+                <a href="" class="logo">
+                    <img src="./imgs/logo.png" alt="Total Miner Community Logo" style="height: 100%; height: 9vh; width: 9vh;">
+                </a>
+
+                <div class="hamburger-toggle" onclick="toggleHamburger()">
+                    <div class="hamburger">
+                        <p id="hamburger-slice-1" class="hamburger-slice-1"></p>
+                        <p id="hamburger-slice-2" class="hamburger-slice-2"></p>
+                        <p id="hamburger-slice-3" class="hamburger-slice-3"></p>
+                    </div>
+                    <p style="font-size: large;">Menu</p>
+                </div>
+                <div id="hero-nav" class="hero-nav">
+                    <a href="" class="nav-link" id="Home">HOME</a>
+                    <a href="" class="nav-link" id="Blog">BLOG</a>
+                    <a href="" class="nav-link" id="Community">COMMUNITY</a>
+                    <a href="" class="nav-link" id="Discover">DISCOVER</a>
+                    <a href="" class="nav-link" id="Discover">FORUM</a>
+                </div>
+            </nav>
+            <div style="display: flex; align-items: center;">
+                <a href="" class="social-logo">
+                    <img src="./imgs/socials/facebook.svg" alt="Facebook Logo">
+                </a>
+                <a href="" class="social-logo">
+                    <img src="./imgs/socials/twitter.svg" alt="Twitter Logo">
+                </a>
+                <a href="" class="social-logo">
+                    <img src="./imgs/socials/youtube.svg" alt="Youtube Logo">
+                </a>
+                <a href="" class="social-logo">
+                    <img src="./imgs/socials/instagram.svg" alt="Instagram Logo">
+                </a>
+                <a href="" class="social-logo" style="padding-right: 0;">
+                    <img src="./imgs/socials/twitch.svg" alt="Twitch Logo">
+                </a>
+            </div>
+        </header>
+
+        <main style="width: 100%;">
+            <header style="height: calc(120px + 3.3vw); box-shadow: 1px 20px 40px -18px rgba(0, 0, 0, 0.911); z-index: -5; position: relative;">
+                <img id="banner-carousel" src="./imgs/BGScreen/2.webp" alt="Carousel of banner images" class="banner-carousel">
+                <h1 style="text-align: center; height: 100px; line-height: calc(120px + 3.3vw); font-size: 3rem;">COMMUNITY</h1>
+            </header>
+
+            <section style="position: absolute; z-index: -2; background-image: url('./imgs/blurredBG.webp'); filter: brightness(95%); width: 100%; height: 100%; background-position: center; background-size: cover;"></section>
+
+            <article class="hero-main">
+                <div class="main-p-container">
+                    <div class="main-p-shadow"></div>
+                    <p class="main-p">Join our official Discord server to connect <br>
+                                                with other Total Miner fans, share creations, <br>
+                                                maps, components and ideas!
+                    </p>
+                    <hr style="border: 1px solid #bebc79; width: 70%; margin: 3% auto auto auto;">
+                </div>
+
+                <div class="body-nav-links">
+                    <a href="" class="body-nav-link">
+                        <img src="./imgs/socials/youtube.svg" alt="Youtube Logo">
+                    </a>
+                    <a href="" class="body-nav-link">
+                        <img src="./imgs/socials/twitter.svg" alt="Twitter Logo">
+                    </a>
+                    <a href="" class="body-nav-link">
+                        <img src="./imgs/socials/facebook.svg" alt="Facebook Logo">
+                    </a>
+                    <a href="" class="body-nav-link">
+                        <img src="./imgs/socials/discord.svg" alt="Discord Logo">
+                    </a>
+                </div>
+
+                <img src="./imgs/avatars/GoldenKnight.png" alt="Carousel of Characters from in game" id="character-carousel" class="character-carousel">
+            </article>
+        </main>
+
+        <article>
+            <header style="margin: 2% 0 3% 0;">
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <hr style="width: 20%; height: 0; border: 1px solid #bebc79;">
+                    <h2 style="padding: 0 1% 1% 1%;">COMMUNITY GALLERY</h2>
+                    <hr style="width: 20%; height: 0; border: 1px solid #bebc79;">
+                </div>
+                <hr style="width: 80%; height: 0; border: 1px solid #bebc79; margin: auto;">
+            </header>
+            <section style="position: relative;">
+                <div style="background-color: #1d5620; filter: blur(20px); width: 100%; height: 40vh; position: absolute; z-index: -1;"></div>
+                <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; width: 100%; gap: 2%; margin-bottom: 2%;">
+                    <img src="./imgs/gallery/1.png" alt="Gallery Image 1" class="gallery-img">
+                    <img src="./imgs/gallery/2.jpg" alt="Gallery Image 2" class="gallery-img">
+                    <img src="./imgs/gallery/3.webp" alt="Gallery Image 3" class="gallery-img">
+                    <img src="./imgs/gallery/4.jpeg" alt="Gallery Image 4" class="gallery-img">
+                </div>
+                <div style="display: flex; justify-content: center;">
+                    <a href="" style="cursor: pointer; display: block; justify-self: center; background-color: transparent; border: none; font-size: 1.1rem; text-decoration: underline;">See More ></a>
+                </div>
+            </section>
+        </article>
+
+        <footer>
+            <a href="" class="footer-logo-link">
+                <img src="./imgs/logo.png" alt="Total Miners Logo" class="footer-logo">
+            </a>
+
+            <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+                <a href="" class="footer-link">Privacy Policy</a>
+                <a href="" class="footer-link">Contacts</a>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+                <a href="" class="footer-link">Socials</a>
+                <a href="" class="footer-link">Support Site</a>
+            </div>
+        </footer>
+    </body>
+</html>
