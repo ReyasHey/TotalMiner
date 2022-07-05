@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -49,9 +49,9 @@
             }
         </script>
     </head>
-    <body onload="drawRandomChar(), drawRandomBanner()">
+    <body onload="drawRandomChar(), drawRandomBanners()">
         <header class="hero-header">
-            <nav style="width: 36%; height: 100%;">
+            <nav class="header-nav">
                 <a href="" class="logo">
                     <img src="./imgs/logo.png" alt="Total Miner Community Logo" style="height: 100%; height: 9vh; width: 9vh;">
                 </a>
@@ -65,21 +65,21 @@
                     <p style="font-size: large;">Menu</p>
                 </div>
                 <div id="hero-nav" class="hero-nav">
-                    <a href="" class="nav-link" id="Home">HOME</a>
-                    <a href="" class="nav-link" id="Blog">BLOG</a>
-                    <a href="" class="nav-link" id="Community">COMMUNITY</a>
-                    <a href="" class="nav-link" id="Discover">DISCOVER</a>
-                    <a href="" class="nav-link" id="Discover">FORUM</a>
+                    <a href="" class="nav-link">HOME</a>
+                    <a href="" class="nav-link">BLOG</a>
+                    <a href="" class="nav-link">COMMUNITY</a>
+                    <a href="" class="nav-link">DISCOVER</a>
+                    <a href="" class="nav-link">FORUM</a>
                 </div>
             </nav>
             <div style="display: flex; align-items: center;">
-                <a href="" class="social-logo">
+                <a href="https://www.facebook.com/teamtotalminer" target="_blank" class="social-logo">
                     <img src="./imgs/socials/facebook.svg" alt="Facebook Logo">
                 </a>
-                <a href="" class="social-logo">
+                <a href="https://twitter.com/totalminer" target="_blank" class="social-logo">
                     <img src="./imgs/socials/twitter.svg" alt="Twitter Logo">
                 </a>
-                <a href="" class="social-logo">
+                <a href="https://www.youtube.com/user/TotalMiner" target="_blank" class="social-logo">
                     <img src="./imgs/socials/youtube.svg" alt="Youtube Logo">
                 </a>
                 <a href="" class="social-logo">
@@ -91,45 +91,56 @@
             </div>
         </header>
 
-        <main style="width: 100%;">
-            <header style="height: calc(120px + 3.3vw); box-shadow: 1px 20px 40px -18px rgba(0, 0, 0, 0.911); z-index: -5; position: relative;">
-                <img id="banner-carousel" src="./imgs/BGScreen/2.webp" alt="Carousel of banner images" class="banner-carousel">
+        <main style="width: 100%; overflow: hidden; position: relative;">
+            <header style="height: calc(130px + 3.3vw); box-shadow: 1px 20px 40px -18px rgba(0, 0, 0, 0.911); z-index: -5; position: relative;">
+                <img id="banner-carousel" src="" alt="Carousel of banner images" class="banner-carousel">
                 <h1 style="text-align: center; height: 100px; line-height: calc(120px + 3.3vw); font-size: 3rem;">COMMUNITY</h1>
             </header>
 
-            <section style="position: absolute; z-index: -2; background-image: url('./imgs/blurredBG.webp'); filter: brightness(95%); width: 100%; height: 100%; background-position: center; background-size: cover;"></section>
+            <figure style="width: 90%;
+                           height: 100%;
+                           overflow: hidden;
+                           position: absolute;
+                           margin: 0 5%;
+                           max-height: 85vh;
+                           background-color: #8d8d8d;
+                           z-index: -3;"
+            >
+                <img src="./imgs/BGScreen/1.webp" id="blurred-carousel-banner" class="blurred-banner-carousel">
+            </figure>
 
             <article class="hero-main">
                 <div class="main-p-container">
                     <div class="main-p-shadow"></div>
-                    <p class="main-p">Join our official Discord server to connect <br>
-                                                with other Total Miner fans, share creations, <br>
-                                                maps, components and ideas!
+                    <p class="main-p">Join our official Discord server to connect
+                                      with other Total Miner fans, share creations,
+                                      maps, components and ideas!
                     </p>
                     <hr style="border: 1px solid #bebc79; width: 70%; margin: 3% auto auto auto;">
                 </div>
 
                 <div class="body-nav-links">
-                    <a href="" class="body-nav-link">
+                    <a href="https://www.youtube.com/user/TotalMiner" target="_blank" class="body-nav-link">
                         <img src="./imgs/socials/youtube.svg" alt="Youtube Logo">
                     </a>
-                    <a href="" class="body-nav-link">
+                    <a href="https://twitter.com/totalminer" target="_blank" class="body-nav-link">
                         <img src="./imgs/socials/twitter.svg" alt="Twitter Logo">
                     </a>
-                    <a href="" class="body-nav-link">
+                    <a href="https://www.facebook.com/teamtotalminer" target="_blank" class="body-nav-link">
                         <img src="./imgs/socials/facebook.svg" alt="Facebook Logo">
                     </a>
-                    <a href="" class="body-nav-link">
+                    <a href="https://discord.com/invite/TotalMiner" target="_blank" class="body-nav-link">
                         <img src="./imgs/socials/discord.svg" alt="Discord Logo">
                     </a>
                 </div>
 
-                <img src="./imgs/avatars/GoldenKnight.png" alt="Carousel of Characters from in game" id="character-carousel" class="character-carousel">
+                <img src="" alt="Carousel of Characters from in game" id="character-carousel" class="character-carousel">
             </article>
         </main>
 
+        <!-- Gallery -->
         <article>
-            <header style="margin: 2% 0 3% 0;">
+            <header style="margin: 2% 0 2% 0; position: relative;">
                 <div style="display: flex; align-items: center; justify-content: center;">
                     <hr style="width: 20%; height: 0; border: 1px solid #bebc79;">
                     <h2 style="padding: 0 1% 1% 1%;">COMMUNITY GALLERY</h2>
@@ -137,8 +148,7 @@
                 </div>
                 <hr style="width: 80%; height: 0; border: 1px solid #bebc79; margin: auto;">
             </header>
-            <section style="position: relative;">
-                <div style="background-color: #1d5620; filter: blur(20px); width: 100%; height: 40vh; position: absolute; z-index: -1;"></div>
+            <section style="position: relative; padding: 4vh 0 4vh 0; background-color: #2c364e; width: 100%;">
                 <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; width: 100%; gap: 2%; margin-bottom: 2%;">
                     <img src="./imgs/gallery/1.png" alt="Gallery Image 1" class="gallery-img">
                     <img src="./imgs/gallery/2.jpg" alt="Gallery Image 2" class="gallery-img">
@@ -146,7 +156,18 @@
                     <img src="./imgs/gallery/4.jpeg" alt="Gallery Image 4" class="gallery-img">
                 </div>
                 <div style="display: flex; justify-content: center;">
-                    <a href="" style="cursor: pointer; display: block; justify-self: center; background-color: transparent; border: none; font-size: 1.1rem; text-decoration: underline;">See More ></a>
+                    <a href="" style="  display: block;
+                                        justify-self: center;
+                                        border: 1px solid rgb(21, 97, 72);
+                                        font-size: 1.1rem;
+                                        text-decoration: none;
+                                        background-color: #1c8a5c;
+                                        padding: 1.5vh;
+                                        margin-top: 1.5vh;
+                                        border-radius: 1vh;"
+                    >
+                        See More >
+                    </a>
                 </div>
             </section>
         </article>
@@ -157,13 +178,13 @@
             </a>
 
             <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
-                <a href="" class="footer-link">Contacts</a>
                 <a href="" class="footer-link">Privacy Policy</a>   <!-- what information is collected, how it is stored and how it might be used -->
                 <a href="" class="footer-link">Terms of Use</a>     <!-- what the visitor agrees to by visiting the website -->
             </div>
             <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+                <a href="" class="footer-link">Contacts</a>
                 <a href="" class="footer-link">Socials</a>
-                <a href="" class="footer-link">Support Site</a>
+                <a href="" class="footer-link">Support Us</a>
             </div>
             <div style="display: flex; justify-content: center; position: absolute; width: 100vw; bottom: 2vh;">
                 <small>&copy; Copyright 2022, Marine2oorah4u</small>
