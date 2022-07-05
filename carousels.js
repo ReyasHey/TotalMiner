@@ -58,11 +58,15 @@ function drawRandomChar () {
     characterContainer.src = "./imgs/avatars/" + characters[rand] + ".png"
 }
 
-function drawRandomBanner () {
+function drawRandomBanners () {
     // Make scalable
     var bannersLength = 113;
+
     var rand = randomInt(1, bannersLength);
+
     var bannerContainer = document.getElementById("banner-carousel");
+    var blurredBannerContainer = document.getElementById("blurred-carousel-banner");
 
     bannerContainer.src = "./imgs/BGScreen/" + rand + ".webp";
+    blurredBannerContainer.src = "./imgs/BGScreen/" + rand + ".webp";
 }

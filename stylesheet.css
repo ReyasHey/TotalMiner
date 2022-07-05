@@ -48,7 +48,7 @@ a {
     display: inline-block;
     text-decoration: none;
 
-    color: #c1c0c6;
+    color: #d0ced6;
 }
 
 a:hover, a:active {
@@ -64,6 +64,11 @@ a:hover, a:active {
     width: calc(100vw - 5%);
     height: 8vh;
     padding-right: 5%;
+}
+
+.header-nav {
+    width: 36%;
+    height: 100%;
 }
 
 a.logo {
@@ -138,14 +143,27 @@ a.logo {
 
 .banner-carousel {
     position: fixed;
-    width: 100%;
-    margin-top: -250px;
+    width: 100vw;
+    height: 120vh;
 
-    clip: rect(0, auto, 60vh, 0);
+    margin-top: -250px;
 
     filter: brightness(80%);
 
     z-index: -999;
+}
+
+.blurred-banner-carousel {
+    position: relative;
+
+    width: 150%;
+    aspect-ratio: 16/9;
+    top: -50vh;
+    right: 20vw;
+
+    filter: brightness(73%) blur(30px);
+
+    z-index: -2;
 }
 
 .hero-main {
@@ -177,7 +195,7 @@ a.logo {
 }
 
 .character-carousel {
-    max-height: 40vh;
+    max-height: 85%;
 
     position: absolute;
 
@@ -202,8 +220,7 @@ footer {
 
     width: 60vw;
     height: 17vh;
-    margin-top: 4vh;
-    padding: 5vh 20vw 4vh 20vw ;
+    padding: 0 20vw 4vh 20vw ;
 
     background-color: #1b1b2c;
 }
@@ -229,6 +246,14 @@ footer > * {
 
     font-size: calc(20px - 0.1vw);
 }
+
+
+@media only screen and (max-width: 1400px) {
+    .header-nav {
+        width: 60%;
+    }
+}
+
 
 @media only screen and (max-width: 768px) {
     body {
@@ -282,9 +307,15 @@ footer > * {
 
     .banner-carousel {
         width: 160%;
+        height: 80vh;
         margin-top: -30px;
 
         left: -30%;
+    }
+
+    .blurred-banner-carousel {
+        width: 220%;
+        top: -5vh;
     }
 
     .hero-main {
